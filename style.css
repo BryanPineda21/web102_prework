@@ -1,30 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     font-family: 'Cabin';
     background-color: #758190;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5a60d3f4c027d8178f1fa759/1594765982604-LA4SVTH0NSXRXKLZJ4AM/heartbeat_7.gif?format=1000w');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+
 }
 
 #tentacles {
     width: 50px;
 }
 
-.header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+
+.container-fluid a{
+    color: white;
 }
+
+
+.navbar-brand{
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: #FFFFFF;
+
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes fadeInAnimation {
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.stats-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    animation: fadeInAnimation ease 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
 
 .stats-container {
     display: flex;
+    align-items: center;
 }
+
+.stats-container:hover {
+    cursor: pointer;
+}
+
 
 .stats-card {
     background-color: #a8b0bc;
+    color: black;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -32,9 +105,34 @@ body {
     text-align: center;
 }
 
+.stats-card:hover{
+    background-image: url('https://cdn.dribbble.com/users/1244919/screenshots/6882923/2019-hjh-background-large-colordribbble3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: greenyellow;
+    font-weight: bolder;
+    cursor: pointer;
+    translate: 0px -20px;
+    box-shadow:  5px 10px 10px blue;
+}
+
+#our-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    flex-flow: column;
+    
+}
+
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
 }
+
 
 #games-container {
     display: flex;
@@ -58,18 +156,46 @@ body {
 }
 
 .game-card:hover {
+    background-image: url('https://cdn.dribbble.com/users/1244919/screenshots/6882923/2019-hjh-background-large-colordribbble3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: greenyellow;
+    font-weight: bolder;
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 5px 10px 10px rgb(52 170 243);
+    translate: 0px -20px;
 }
 
-#button-container {
+#button-filter-container {
+
     text-align: center;
 }
 
 button {
     font-family: 'Cabin';
-    border: none;
     padding: 1%;
     margin: 1%;
-    border-radius: 7px;
+    border: none;    
+}
+
+button:hover{
+    background-image: url('https://preview.redd.it/6vwdh5vhg2l81.gif?width=983&auto=webp&s=310f3e97a676edbe1b4b5f12ee8593ac62cf973c');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: greenyellow;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px palevioletred;
+    cursor: pointer;
+}
+
+#unfunded-btn{
+    border-radius: 50px;
+}
+
+#funded-btn{
+    border-radius: 50px;
+}
+
+#all-btn{
+    border-radius: 50px;
 }
